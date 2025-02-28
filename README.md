@@ -1,61 +1,59 @@
-WhatsApp Bot
+# WhatsApp Group Bot
 
-Este é um bot para WhatsApp desenvolvido com whatsapp-web.js. Ele permite o envio automatizado de mensagens para conversas específicas no WhatsApp com base em palavras-chave.
+Este é um bot para WhatsApp que automatiza o envio de mensagens em grupos específicos usando a biblioteca `whatsapp-web.js`.
 
-📌 Funcionalidades
+## 📌 Funcionalidades
 
-Envio automático de mensagens agendadas.
+- Conecta-se ao WhatsApp via QR Code.
+- Lista todas as conversas e grupos disponíveis.
+- Envia mensagens automaticamente para grupos que contêm um termo específico no nome.
+- Permite disparo manual de mensagens pelo terminal.
+- Agendamento de mensagens automáticas toda sexta-feira às 17h.
 
-Disparo manual de mensagens via terminal.
+## 🚀 Instalação
 
-Busca dinâmica de conversas com base em palavras-chave.
+### Pré-requisitos
 
-🛠 Tecnologias Utilizadas
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- WhatsApp instalado no celular
 
-Node.js
+### Passos
 
-whatsapp-web.js
+1. Clone este repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/whatsapp-group-bot.git
+   cd whatsapp-group-bot
+   ```
 
-node-schedule (para agendamentos)
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
 
-qrcode-terminal (para exibição do QR Code)
+3. Inicie o bot:
+   ```sh
+   node bot.js
+   ```
 
-🚀 Instalação e Configuração
+4. Escaneie o QR Code exibido no terminal com o WhatsApp.
 
-Pré-requisitos
+## ⚙️ Configuração
 
-Node.js instalado
+- O nome do grupo é filtrado pela palavra-chave `bot` (pode ser alterado no código).
+- A mensagem pode ser personalizada dentro do script.
+- Para envio manual, digite `enviar` no terminal.
 
-Conta no WhatsApp
+## 🛠 Tecnologias utilizadas
 
-Passo a Passo
+- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
+- [node-schedule](https://www.npmjs.com/package/node-schedule)
+- Node.js
 
-Clone este repositório:
+## 📜 Licença
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+Este projeto está sob a licença MIT. Sinta-se à vontade para contribuir!
 
-Instale as dependências:
+---
 
-npm install
-
-Inicie o bot:
-
-node index.js
-
-Escaneie o QR Code que aparecerá no terminal para conectar sua conta do WhatsApp.
-
-⏳ Agendamento de Mensagens
-
-O bot está configurado para enviar uma mensagem automaticamente toda sexta-feira às 17h para conversas que contenham a palavra-chave definida no código.
-
-💡 Envio Manual
-
-Para disparar a mensagem manualmente, digite enviar no terminal.
-
-📜 Licença
-
-Este projeto é de código aberto e pode ser usado livremente.
-
-Feito com ❤️ por [Seu Nome]
-
+✉️ Para dúvidas ou sugestões, entre em contato!
